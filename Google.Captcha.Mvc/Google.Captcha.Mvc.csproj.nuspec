@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<package>
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+    <id>
+      reCaptcha.Google.Mvc
+    </id>
+    <version>1.0.1</version>
+    <authors>Soheil Alizadeh</authors>
+    <owners>Soheil Alizadeh</owners>
+    <licenseUrl>
+      https://github.com/SoheilAlizade/Google.ReCaptcha.Mvc/blob/master/LICENSE
+    </licenseUrl>
+    <projectUrl>
+     https://github.com/SoheilAlizade/reCaptcha.Google.Mvc
+    </projectUrl>
+    <iconUrl>
+      https://github.com/SoheilAlizade/Google.ReCaptcha.Mvc/raw/master/logo.png
+    </iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      This is a google re-captcha for ASP.NET MVC web apps
+    </description>
+    <releaseNotes>
+      The Summery of Pack
+    </releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>
+      Tags
+    </tags>
+    <dependencies>
+      <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
+      <dependency id="Newtonsoft.Json" version="8.0.3" />
+    </dependencies>
+  </metadata>
+  
+  <files>
+    <file src="bin\Debug\*.dll" target="lib" />
+  </files>
+</package>
