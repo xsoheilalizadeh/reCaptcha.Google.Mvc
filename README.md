@@ -12,11 +12,41 @@ In `Global.asax` file and `Application_Start` method you can config Google reCap
 
 ``
   GoogleCaptchaConfiguration.Register(new GoogleCaptchaConfig(CaptchaTheme.Light)
-            {
-                EnableInDebuggingMode = false,
-                Secretkey = "yourSecretkey",
-                Sitekey = "yourSitekey",
-            });
-
+  {
+      EnableInDebuggingMode = false,
+      Secretkey = "yourSecretkey",
+      Sitekey = "yourSitekey",
+  });
 ``
+
+**Usage**
+
+To render Captcha use `Html.RenderCaptcha()`:
+
+```
+   @Html.RenderCaptcha()
+   @Html.RenderCaptcha("siteKey") // also you set Sitekey here
+```
+
+To render Captcha script  use `Html.RenderCaptchaScript()`:
+
+```
+@Html.RenderCaptchaScript()
+```
+
+To validation request use `GoogleCaptcha` on the action method:
+
+```
+   [HttpPost]
+   [Route("sing-up")]
+   [GoogleCaptcha]
+   public ActionResult Register()
+   {
+       // more code
+   }
+```
+
+
+
+
 
