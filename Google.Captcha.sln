@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Captcha.Mvc", "Google.Captcha.Mvc\Google.Captcha.Mvc.csproj", "{AC831DAD-36DE-4431-94DE-B7BEA344D17F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Google.Captcha.Mvc", "src\reCaptcha.Google.Mvc.csproj", "{AC831DAD-36DE-4431-94DE-B7BEA344D17F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

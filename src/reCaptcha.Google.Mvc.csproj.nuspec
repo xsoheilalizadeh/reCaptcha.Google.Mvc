@@ -4,7 +4,7 @@
     <id>
       reCaptcha.Google.Mvc
     </id>
-    <version>1.0.3-preview</version>
+    <version>1.0.4-alpha</version>
     <authors>Soheil Alizadeh</authors>
     <owners>Soheil Alizadeh</owners>
     <licenseUrl>
@@ -25,7 +25,7 @@
     </releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>
-      Captcha ReCaptcha ASP.NET MVC Google
+      Captcha ReCaptcha  Google
     </tags>
     <dependencies>
       <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
