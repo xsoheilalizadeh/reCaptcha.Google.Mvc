@@ -14,7 +14,6 @@ namespace Google.ReCaptcha.Mvc.HtmlHelpers
     {
         public static MvcHtmlString RenderCaptcha(this HtmlHelper helper, string sitekey = null)
         {
-
             var validationInputName = GoogleCaptchaConfiguration.ValidationInputName;
             
             var captchaTag = new TagBuilder("div");
@@ -33,7 +32,7 @@ namespace Google.ReCaptcha.Mvc.HtmlHelpers
 
             captchaTag.Attributes.Add("class", "g-recaptcha");
 
-            captchaTag.Attributes.Add("data-sitekey", sitekey ?? GoogleCaptchaConfiguration.Sitekey);
+            captchaTag.Attributes.Add("data-sitekey", sitekey ?? GoogleCaptchaConfiguration.Sitekey ?? CaptchException.ThrowSiteKeyNotInitialized());
 
             captchaTag.Attributes.Add("data-theme", GoogleCaptchaConfiguration.Theme.ToString().ToLower());
 

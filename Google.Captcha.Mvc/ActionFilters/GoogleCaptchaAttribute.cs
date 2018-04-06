@@ -23,7 +23,7 @@ namespace Google.ReCaptcha.Mvc.ActionFilters
 
             var client = new GoogleCaptchaClient();
 
-            var secretkey = GoogleCaptchaConfiguration.Secretkey;
+            var secretkey = GoogleCaptchaConfiguration.Secretkey ?? CaptchException.ThrowSecretkeyNotInitilized();
 
             var validationKey = GoogleCaptchaConfiguration.ValidationInputName;
 
