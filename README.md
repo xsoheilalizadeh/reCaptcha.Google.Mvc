@@ -2,7 +2,7 @@
 
 Install Nuget Package:
 
-`Install-Package reCaptcha.Google.Mvc -Version 1.0.1`
+```Install-Package reCaptcha.Google.Mvc -Version 1.0.1```
 
 **Documention**
 
@@ -10,7 +10,7 @@ Install Nuget Package:
 
 In `Global.asax` file and `Application_Start` method you can config Google reCaptcha:
 
-``
+```
   GoogleCaptchaConfiguration.Register(new GoogleCaptchaConfig(CaptchaTheme.Light)
             {
                 EnableInDebuggingMode = false,
@@ -18,5 +18,5 @@ In `Global.asax` file and `Application_Start` method you can config Google reCap
                 Sitekey = "yourSitekey",
             });
 
-``
+```
 
