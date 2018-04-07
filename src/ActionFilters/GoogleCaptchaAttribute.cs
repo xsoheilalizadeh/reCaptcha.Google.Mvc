@@ -29,7 +29,7 @@ namespace Google.ReCaptcha.Mvc.ActionFilters
 
             var validationMessage = GoogleCaptchaConfiguration.ValidationMessage;
 
-            if (!Task.Run(() => client.IsAcceptAsync(response, secretkey)).Result)
+            if (!client.IsAcceptAsync(response, secretkey).GetAwaiter().GetResult())
             {
                 filterContext.Controller.ViewData.ModelState.AddModelError(validationKey, validationMessage);
 

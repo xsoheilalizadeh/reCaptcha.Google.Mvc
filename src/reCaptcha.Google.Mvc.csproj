@@ -76,6 +76,8 @@
     <Compile Include="ActionFilters\GoogleCaptchaAttribute.cs" />
     <Compile Include="CaptchException.cs" />
     <Compile Include="Client\GoogleCaptchaClient.cs" />
+    <Compile Include="Client\HttpClientFactory.cs" />
+    <Compile Include="Client\IHttpClientFactory.cs" />
     <Compile Include="Configuration\CaptchaConstraints.cs" />
     <Compile Include="Configuration\CaptchaTheme.cs" />
     <Compile Include="Configuration\GoogleCaptchaConfig.cs" />
