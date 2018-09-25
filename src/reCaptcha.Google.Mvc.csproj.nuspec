@@ -4,7 +4,7 @@
     <id>
       reCaptcha.Google.Mvc
     </id>
-    <version>1.0.4-alpha</version>
+    <version>1.0.5</version>
     <authors>Soheil Alizadeh</authors>
     <owners>Soheil Alizadeh</owners>
     <licenseUrl>
@@ -28,12 +28,12 @@
       Captcha ReCaptcha  Google
     </tags>
     <dependencies>
-      <dependency id="Microsoft.AspNet.Mvc" version="5.2.3" />
-      <dependency id="Newtonsoft.Json" version="8.0.3" />
+      <dependency id="Microsoft.AspNet.Mvc" version="5.2.6" />
+      <dependency id="Newtonsoft.Json" version="11.0.2" />
     </dependencies>
   </metadata>
   
   <files>
-    <file src="bin\Debug\*.dll" target="lib" />
+    <file src="bin\Release\*.dll" target="lib" />
   </files>
 </package>
