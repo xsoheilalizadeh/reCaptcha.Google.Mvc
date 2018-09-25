@@ -34,6 +34,8 @@
   </metadata>
   
   <files>
-    <file src="bin\Release\*.dll" target="lib" />
+    <file src="bin\Release\net46\*.dll" target="lib\net46" />
+    <file src="bin\Release\net47\*.dll" target="lib\net47" />
   </files>
+
 </package>

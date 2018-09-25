@@ -3,7 +3,7 @@
     <ProjectGuid>{AC831DAD-36DE-4431-94DE-B7BEA344D17F}</ProjectGuid>
     <RootNamespace>Google.ReCaptcha.Mvc</RootNamespace>
     <AssemblyName>Google.ReCaptcha.Mvc</AssemblyName>
-    <TargetFramework>net46</TargetFramework>
+    <TargetFrameworks>net46;net47</TargetFrameworks>
     <AssemblyTitle>Google.Captcha.Mvc</AssemblyTitle>
     <Product>Google.Captcha.Mvc</Product>
     <Copyright>Copyright ©  2018</Copyright>
@@ -19,6 +19,9 @@
   <PropertyGroup>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="reCaptcha.Google.Mvc.csproj.nuspec" />
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.6" />
     <PackageReference Include="Microsoft.AspNet.Razor" Version="3.2.6" />
