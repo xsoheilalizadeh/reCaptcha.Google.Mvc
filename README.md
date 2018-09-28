@@ -2,7 +2,9 @@
 
 Install Nuget Package:
 
-`Install-Package reCaptcha.Google.Mvc`
+```
+Install-Package reCaptcha.Google.Mvc
+```
 
 ***Documention***
 
@@ -23,7 +25,7 @@ GoogleCaptchaConfiguration.Register(new GoogleCaptchaConfig(CaptchaTheme.Light)
 
 To render Captcha use `Html.RenderCaptcha()`:
 
-```C#
+```razor
 @Html.RenderCaptcha()
 @Html.RenderCaptcha("siteKey") // also you set Sitekey here
 ```
