@@ -10,7 +10,7 @@ Install Nuget Package:
 
 In `Global.asax` file and `Application_Start` method you can config Google reCaptcha:
 
-```
+```c#
 GoogleCaptchaConfiguration.Register(new GoogleCaptchaConfig(CaptchaTheme.Light)
 {
     EnableInDebuggingMode = false,
@@ -23,20 +23,20 @@ GoogleCaptchaConfiguration.Register(new GoogleCaptchaConfig(CaptchaTheme.Light)
 
 To render Captcha use `Html.RenderCaptcha()`:
 
-```
+```C#
 @Html.RenderCaptcha()
 @Html.RenderCaptcha("siteKey") // also you set Sitekey here
 ```
 
 To render Captcha script  use `Html.RenderCaptchaScript()`:
 
-```
+```razor
 @Html.RenderCaptchaScript()
 ```
 
 To validation request use `GoogleCaptcha` on the action method:
 
-```
+```c#
 [HttpPost]
 [Route("sing-up")]
 [GoogleCaptcha]
