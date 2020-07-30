@@ -40,7 +40,7 @@ To validation request use `GoogleCaptcha` on the action method:
 
 ```c#
 [HttpPost]
-[Route("sing-up")]
+[Route("sign-up")]
 [GoogleCaptcha]
 public ActionResult Register()
 {
